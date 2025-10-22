@@ -1,0 +1,10 @@
+body {
+    font-family: sans-serif;
+    margin: 2em;
+}
+
+#threejs-container {
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+}
