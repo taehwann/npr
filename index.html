@@ -4,12 +4,25 @@
 		<meta charset="utf-8">
 		<title>Non-Photorealistic Rendering</title>
 		<link rel="stylesheet" href="style.css">
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body>
         <h1>Non-Photorealistic Rendering (NPR)</h1>
         <p>Personal notes and studies</p>
-		<div id="threejs-container"></div>
+        <div class="container">
+            <div class="image-container">
+                <p>Example image</p>
+                <img src="asset/image.jpg" alt="NPR Image">
+            </div>
+            <div id="grayscale-container">
+                <p>Grayscale</p>
+            </div>
+        </div>
+		<p>Grayscale = rec601 luma \(Y = 0.299R + 0.587G + 0.114B\)</p>
+        <p>Halftone</p>
+        <div id="halftone-container"></div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-		<script src="script.js"></script>
+		<script src="grayscale.js"></script>
+		<script src="halftone.js"></script>
 	</body>
 </html>
