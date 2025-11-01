@@ -7,7 +7,7 @@ function renderHalftone() {
     container.appendChild(renderer.domElement);
     
     const loader = new THREE.TextureLoader();
-    loader.load('asset/image.jpg', (texture) => {
+    loader.load('asset/frog.jpg', (texture) => {
         const geometry = new THREE.PlaneGeometry(2, 2);
         const material = new THREE.ShaderMaterial({
             uniforms: {
